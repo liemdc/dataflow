@@ -1,0 +1,16 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="DataFlow.Default" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>DataFlow</title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="frmMain" runat="server">
+        <asp:PlaceHolder runat="server" ID="plcManagers"></asp:PlaceHolder>
+        <asp:ContentPlaceHolder ID="plcMain" runat="server"></asp:ContentPlaceHolder>          
+    </form>
+</body>
+</html>
