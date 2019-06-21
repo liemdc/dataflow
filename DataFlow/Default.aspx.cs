@@ -7,11 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace DataFlow
 {
-    public partial class CMSDefault : System.Web.UI.MasterPage
+    public partial class Default : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            DataUtils.WriteLog(SystemModels.Fn_Get_MaDinhDanh("2020", "DH", 4, "Mã đơn hàng."));
         }
     }
 }

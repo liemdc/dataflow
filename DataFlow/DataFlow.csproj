@@ -46,12 +46,19 @@
     <Reference Include="CMS.CMSHelper">
       <HintPath>..\..\cms.vApp.local\bin\CMS.CMSHelper.dll</HintPath>
     </Reference>
+    <Reference Include="CMS.CMSStorage">
+      <HintPath>..\..\cms.vApp.local\bin\CMS.CMSStorage.dll</HintPath>
+    </Reference>
     <Reference Include="CMS.DataEngine, Version=6.0.4713.28070, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\cms.vApp.local\bin\CMS.DataEngine.dll</HintPath>
     </Reference>
     <Reference Include="CMS.DataProviderSQL">
       <HintPath>..\..\cms.vApp.local\bin\CMS.DataProviderSQL.dll</HintPath>
+    </Reference>
+    <Reference Include="CMS.GlobalHelper, Version=6.0.4713.28069, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\cms.vApp.local\bin\CMS.GlobalHelper.dll</HintPath>
     </Reference>
     <Reference Include="CMS.SettingsProvider, Version=6.0.4713.28067, Culture=neutral, PublicKeyToken=834b12a258f213f9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -94,6 +101,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="App_Control\DataGird.ascx" />
+    <Content Include="Default.aspx" />
     <Content Include="DonHangControl.aspx" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
@@ -105,6 +113,13 @@
     </Compile>
     <Compile Include="App_Control\DataGird.ascx.designer.cs">
       <DependentUpon>DataGird.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
     <Compile Include="DonHangControl.aspx.cs">
       <DependentUpon>DonHangControl.aspx</DependentUpon>
@@ -123,6 +138,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DataUtils.cs" />
+    <Compile Include="Models\SystemModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -137,7 +154,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

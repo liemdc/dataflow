@@ -10,7 +10,7 @@
 namespace DataFlow {
     
     
-    public partial class Default {
+    public partial class CMSDefault {
         
         /// <summary>
         /// head control.
