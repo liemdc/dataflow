@@ -1,20 +1,21 @@
-Date: 6/21/2019 3:12:06 PM
-BlaBla!
-Date: 6/21/2019 3:12:55 PM
-BlaBla!
-Date: 6/21/2019 3:48:40 PM
-DH001
-Date: 6/21/2019 4:15:56 PM
-0001
-Date: 6/21/2019 4:17:05 PM
-DH190002
-Date: 6/21/2019 4:23:39 PM
-DH190003
-Date: 6/21/2019 4:27:58 PM
-DH190004
-Date: 6/21/2019 4:31:51 PM
-0001
-Date: 6/21/2019 4:33:04 PM
-DH190001
-Date: 6/21/2019 4:34:14 PM
-DH200001
+Date: 7/29/2019 11:34:42 AM
+<?xml version="1.0" encoding="utf-16"?>
+<person xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <name>Chervine</name>
+  <surname>Bhiwoo</surname>
+  <country>Mauritius</country>
+</person>
+Date: 7/29/2019 11:37:46 AM
+<?xml version="1.0" encoding="utf-16"?>
+<ArrayOfPerson xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <person>
+    <name>Chervine</name>
+    <surname>Bhiwoo</surname>
+    <country>Mauritius</country>
+  </person>
+  <person>
+    <name>Chervine2</name>
+    <surname>Bhiwoo2</surname>
+    <country>Mauritius2</country>
+  </person>
+</ArrayOfPerson>
